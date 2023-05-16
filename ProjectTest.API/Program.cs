@@ -11,7 +11,7 @@ var app = builder.Build();
 app.MapGet("/", () =>
 {
     app.Logger.LogInformation("Initial Home Get");
-    return "GET - Net 6 Running ... 15052023-v1.0.0 CI/CD in AKS v1.0.2023 AFORO255";
+    return "GET - Net 6 Running ... 15052023-v1.0.0 CI/CD in AKS v2.0.2023 AFORO255";
 });
 
 app.MapPost("/", () =>
