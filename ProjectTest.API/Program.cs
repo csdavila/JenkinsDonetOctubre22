@@ -11,7 +11,7 @@ var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 app.MapGet("/", () =>
 {
     app.Logger.LogInformation("Initial Home Get");
-    return "GET - Net 6 Running ... 23052023-v1.0.0 CI/CD in Travis v2.0.2023 AFORO255";
+    return "GET - Net 6 Running ... 23052023-v1.0.0 CI/CD in Travis v1.0.2023 AFORO255";
 });
 
 app.MapPost("/", () =>
