@@ -1,8 +1,9 @@
 language: csharp
 mono: none
 sudo: required
-dist: xenial
+# dist: xenial
 # dist: focal
+dist: trusty
 dotnet: 6.0.202
 branches:
   only:
