@@ -1,7 +1,8 @@
 language: csharp
 mono: none
 sudo: required
-dist: xenial
+# dist: xenial
+dist: precise
 dotnet: 6.0.202
 branches:
   only:
@@ -20,8 +21,8 @@ before_deploy:
   # - wget https://bootstrap.pypa.io/pip/3.5/get-pip.py
   # - sudo python3 get-pip.py
   # - export CLOUDSDK_PYTHON=python3.5
-  - pip install --upgrade virtualenv
-  - virtualenv -p python3 venv
+  # - pip install --upgrade virtualenv
+  # - virtualenv -p python3 venv
 # [START travis_deploy]
 deploy:
   provider: gae
