@@ -15,12 +15,13 @@ before_deploy:
   # - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
   # - sudo apt-get install python3-venv
   # - sudo apt update
-  - sudo apt install python3 python3-dev python3-venv
-  - sudo apt-get install wget
-  - wget https://bootstrap.pypa.io/pip/3.5/get-pip.py
-  - sudo python3 get-pip.py
-  - pip --version
-  - export CLOUDSDK_PYTHON=python3.5
+  # - sudo apt install python3 python3-dev python3-venv
+  # - sudo apt-get install wget
+  # - wget https://bootstrap.pypa.io/pip/3.5/get-pip.py
+  # - sudo python3 get-pip.py
+  # - export CLOUDSDK_PYTHON=python3.5
+  - pip install --upgrade virtualenv
+  - virtualenv -p python3 venv
 # [START travis_deploy]
 deploy:
   provider: gae
