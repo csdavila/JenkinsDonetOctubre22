@@ -12,6 +12,7 @@ script:
   - dotnet test
 before_deploy:
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install faraday -v 1.8.0
+  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
 # [START travis_deploy]
 deploy:
   provider: gae
