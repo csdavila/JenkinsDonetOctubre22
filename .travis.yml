@@ -13,7 +13,8 @@ script:
 before_deploy:
   # - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install faraday -v 1.8.0
   # - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
-  - export CLOUDSDK_PYTHON=python3.5
+  # - export CLOUDSDK_PYTHON=python3.5
+  - sudo apt-get install python3-venv
 # [START travis_deploy]
 deploy:
   provider: gae
