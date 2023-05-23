@@ -25,4 +25,6 @@ addons:
   apt:
     packages:
       - libgmp3-dev
+      - dpl.gemspec
+      - dpl
 # [END travis_deploy]
