@@ -2,7 +2,7 @@ language: csharp
 mono: none
 sudo: required
 # dist: xenial
-dist: trusty
+dist: bionic
 dotnet: 6.0.202
 branches:
   only:
