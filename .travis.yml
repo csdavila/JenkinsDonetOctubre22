@@ -12,8 +12,6 @@ script:
   - dotnet build
   - dotnet test
 before_deploy:
-  # - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install faraday -v 1.8.0
-  # - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install dpl
   # - sudo apt-get install python3-venv
   # - sudo apt update
   # - sudo apt install python3 python3-dev python3-venv
