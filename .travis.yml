@@ -21,4 +21,8 @@ deploy:
   default: true
   on:
     all_branches: true
+addons:
+  apt:
+    packages:
+      - libgmp3-dev
 # [END travis_deploy]
