@@ -2,8 +2,7 @@ language: csharp
 mono: none
 sudo: required
 # dist: xenial
-# dist: focal
-dist: trusty
+dist: focal
 dotnet: 6.0.202
 branches:
   only:
@@ -20,7 +19,7 @@ deploy:
   # Skip cleanup so api_key.py and vendored dependencies are still there
   skip_cleanup: true
   keyfile: travis-net6-a23-387601-931e8df42618.json
-  project: travis-net6-a23
+  project: travis-net6-a23-387601
   version: service-demo
   default: true
   on:
